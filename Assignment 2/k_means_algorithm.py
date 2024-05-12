@@ -72,12 +72,13 @@ def main():
         cluster_centre = (x,y)
         initial_cluster_centres.append(cluster_centre)
 
-    print(f'Initial Cluster Centres: {initial_cluster_centres}')
+    #print(f'Initial Cluster Centres: {initial_cluster_centres}')
 
     final_cluster_centres = k_means(dataset, initial_cluster_centres)
-    print(f'Final cluster centres: {final_cluster_centres}')
+    #print(f'Final cluster centres: {final_cluster_centres}')
     error = sum_of_squares_error(dataset, final_cluster_centres)
-    print(f'Sum of sqaures error: {error}')
+    #print(f'Sum of sqaures error: {error}')
+    print(error)
     
 
 if '__main__' == __name__:
